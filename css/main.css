@@ -1,0 +1,113 @@
+.jumbotron {
+    position: relative;
+  }
+  
+  .block {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* .jumbotron p {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  } */
+  
+  .container-fluid {
+    overflow-x: hidden;
+  }
+  /* .paroller-img {
+    max-width: 33%;
+    height: auto;
+  } */
+  
+  .section1 {
+    position: relative;
+    height: 100vh;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  
+  .section1::before {
+    content: '';
+    background-image: url('../assets/frontpic.jpg');
+    background-size: cover;
+    opacity: 0.55;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  
+  .title {
+    position: relative;
+    top:20%;
+    left:5%;
+    color: black;
+  }
+  
+  .section2 {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.125));
+    /* align-items: center; *
+    /* justify-content: center; */
+  }
+  
+  .section3 {
+    height: 200vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.2));
+    /* align-items: center; *
+    /* justify-content: center; */
+    /* display: flex;
+    flex-flow: column wrap;
+    align-content: space-between; */
+  }
+  
+  .section4 {
+    height: 500vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+   
+  }
+  .section5 {
+    height: 500vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+   
+  }
+  .sectionx {
+    height: 150vh;
+   
+  }
+  
+  .onePage {
+    position: relative;
+    height: 100vh;
+  }
+  .running {
+    top: 50%;
+    left: 0;
+  }
+  .man {
+    position: relative;
+    max-width: 5%;
+    height: auto;
+  }
+  
+  
+  
+  .a {
+    width: 5%;
+  }
+  .right {
+    position: absolute;
+    top : 25%;
+    left : 80%;
+  
+  }
+  .left {
+    position: absolute;
+    top : 25%;
+    left : 20%;
+  }
