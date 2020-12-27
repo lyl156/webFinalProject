@@ -1,3 +1,6 @@
+#ch {
+  width: 15%;
+}
 .jumbotron {
     position: relative;
   }
@@ -49,6 +52,12 @@
     color: black;
   }
   
+  .section1_5 {
+    position: relative;
+    height: 100vh;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
   .section2 {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.125));

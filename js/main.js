@@ -18,7 +18,7 @@
 })(jQuery);
 
 
-
+// parallex scrolling
 $(document).ready(function () {
   var winh = $(window).height();
 
@@ -45,6 +45,7 @@ $(document).ready(function () {
     });
   });
 });
+// add conversation
 var vh = window.innerHeight ||
              document.documentElement.clientHeight ||
              document.body.clientHeight;
@@ -53,20 +54,27 @@ $(document).ready(function () {
   $(window).scroll(function () {
     var scrolled = $(window).scrollTop();
       
-      if (scrolled >= 2.05 * vh ) {
+      if (scrolled >= 3.05 * vh ) {
         $(".con1").css("opacity", "1");
         console.log(scrolled)
         
       }
-      if (scrolled >= 2.5 * vh) {
+      if (scrolled >= 3.5 * vh) {
         $(".con2").css("opacity", "1");
       }
-      if (scrolled >= 2.8 * vh)
+      if (scrolled >= 3.8 * vh)
       $(".con3").css("opacity", "1");
-      if (scrolled < 2 * vh) {
+      if (scrolled < 3 * vh) {
         $(".con1").css("opacity", "0");
         $(".con2").css("opacity", "0");
         $(".con3").css("opacity", "0");
       }
   });
 });
+
+//change img
+function myFunction(x) {
+  document.getElementById("myImg").src = "./assets/"+ x + ".png";
+  document.getElementById("myImg2").src = "./assets/"+ x + ".png";
+
+}
