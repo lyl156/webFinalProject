@@ -58,9 +58,27 @@
     /* align-items: center; */
     /* justify-content: center; */
   }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
   .section2 {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.125));
+    background-image: url('../assets/section3.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     /* align-items: center; *
     /* justify-content: center; */
   }
@@ -68,28 +86,56 @@
   .section3 {
     height: 200vh;
     background: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.2));
+    background-repeat: no-repeat;
+    background-image: url('../assets/section3.png');
+    background-attachment: fixed;
     /* align-items: center; *
     /* justify-content: center; */
     /* display: flex;
     flex-flow: column wrap;
     align-content: space-between; */
   }
+  .section3 p1 {
+    
+    font-size: 100%;
+    color: black;
+    font-weight:bold;
+    border: 2px solid black;
+    outline-style: outset;
+    outline-color: grey;
+    padding: 5%;
+    
+  }
   
   .section4 {
     height: 500vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
-   
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)); */
+    background-repeat: no-repeat;
+    background-image: url('../assets/section3.png');
+    background-attachment: fixed;
   }
   .section5 {
     height: 500vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-   
+    background-repeat: no-repeat;
+    background-image: url('../assets/section5.png');
+    background-attachment: fixed;
   }
   .sectionx {
     height: 150vh;
-   
+    align-items: center; 
   }
-  
+  .mid {
+    position: absolute;
+    top : 30%;
+    left : 30%;
+  }
+  .mid2 {
+    position: absolute;
+    top : 30%;
+    left : 50%;
+
+  }
   .onePage {
     position: relative;
     height: 100vh;
@@ -119,4 +165,19 @@
     position: absolute;
     top : 25%;
     left : 20%;
+  }
+
+  .game1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3));
+
+  }
+  .game2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+
+  }
+  .radio {
+    transform: scale(1.6);
+              margin-right: 10px;
+              vertical-align: middle;
+              margin-top: -2px;
   }
