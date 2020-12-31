@@ -60,6 +60,12 @@
     /* justify-content: center; */
   }
 
+  #output {
+    position: relative;
+    font-size:50px;
+    left : 35%;
+  }
+
   .button {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -195,7 +201,7 @@
               vertical-align: middle;
               margin-top: -2px;
   }
-
+/* https://projects.verou.me/bubbly/ */
   .speech-bubble {
     position: relative;
     background: wheat;

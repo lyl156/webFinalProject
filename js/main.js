@@ -59,38 +59,42 @@ $(document).ready(function () {
         console.log(scrolled)
         
       }
-      if (scrolled >= 3.5 * vh) {
-        $(".con2").css("opacity", "1");
+      for (i = 0; i < 4; i++) {
+        if (scrolled >= (3.5 + i * 0.4) * vh) {
+          $(".con" + (2 + i)).css("opacity", "1");
+        }
       }
-      if (scrolled >= 3.9 * vh) {
-        $(".con3").css("opacity", "1");
-      }
+      // if (scrolled >= 3.5 * vh) {
+      //   $(".con2").css("opacity", "1");
+      // }
+      // if (scrolled >= 3.9 * vh) {
+      //   $(".con3").css("opacity", "1");
+      // }
      
-      if (scrolled >= 4.3 * vh) {
-        $(".con4").css("opacity", "1");
-      }
+      // if (scrolled >= 4.3 * vh) {
+      //   $(".con4").css("opacity", "1");
+      // }
      
-      if (scrolled >= 4.7 * vh)
-      $(".con5").css("opacity", "1");
+      // if (scrolled >= 4.7 * vh)
+      // $(".con5").css("opacity", "1");
+      for (i = 0; i < 3; i++) {
+        if (scrolled >= (5.0 + i * 0.4) * vh) {
+          $(".con" + (6 + i)).css("opacity", "1");
+        }
+      }
+      // if (scrolled >= 5.0 * vh)
+      // $(".con6").css("opacity", "1");
 
-      if (scrolled >= 5.0 * vh)
-      $(".con6").css("opacity", "1");
+      // if (scrolled >= 5.4 * vh)
+      // $(".con7").css("opacity", "1");
 
-      if (scrolled >= 5.4 * vh)
-      $(".con7").css("opacity", "1");
-
-      if (scrolled >= 5.8 * vh)
-      $(".con8").css("opacity", "1");
+      // if (scrolled >= 5.8 * vh)
+      // $(".con8").css("opacity", "1");
       
       if (scrolled < 3 * vh) {
-        $(".con1").css("opacity", "0");
-        $(".con2").css("opacity", "0");
-        $(".con3").css("opacity", "0");
-        $(".con4").css("opacity", "0");
-        $(".con5").css("opacity", "0");
-        $(".con6").css("opacity", "0");
-        $(".con7").css("opacity", "0");
-        $(".con8").css("opacity", "0");
+        for (i = 1; i <= 8; i++) {
+          $(".con" + i).css("opacity", "0");
+        } 
       }
   });
 });
@@ -99,5 +103,9 @@ $(document).ready(function () {
 function myFunction(x) {
   document.getElementById("myImg").src = "./assets/"+ x + ".png";
   document.getElementById("myImg2").src = "./assets/"+ x + ".png";
+  if (x > 2) {
+    x--;
+  }
+  document.getElementById('output').innerHTML = '你選擇的是' + x + '號';
 
 }
