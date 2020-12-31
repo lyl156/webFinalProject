@@ -36,7 +36,7 @@ $(document).ready(function () {
             'top',
             (($(this).data('top2') - $(this).data('top')) *
               parent_scrolled) /
-              winh +
+              (parent_height - winh) +
               $(this).data('top') +
               '%'
           );
@@ -62,12 +62,35 @@ $(document).ready(function () {
       if (scrolled >= 3.5 * vh) {
         $(".con2").css("opacity", "1");
       }
-      if (scrolled >= 3.8 * vh)
-      $(".con3").css("opacity", "1");
+      if (scrolled >= 3.9 * vh) {
+        $(".con3").css("opacity", "1");
+      }
+     
+      if (scrolled >= 4.3 * vh) {
+        $(".con4").css("opacity", "1");
+      }
+     
+      if (scrolled >= 4.7 * vh)
+      $(".con5").css("opacity", "1");
+
+      if (scrolled >= 5.0 * vh)
+      $(".con6").css("opacity", "1");
+
+      if (scrolled >= 5.4 * vh)
+      $(".con7").css("opacity", "1");
+
+      if (scrolled >= 5.8 * vh)
+      $(".con8").css("opacity", "1");
+      
       if (scrolled < 3 * vh) {
         $(".con1").css("opacity", "0");
         $(".con2").css("opacity", "0");
         $(".con3").css("opacity", "0");
+        $(".con4").css("opacity", "0");
+        $(".con5").css("opacity", "0");
+        $(".con6").css("opacity", "0");
+        $(".con7").css("opacity", "0");
+        $(".con8").css("opacity", "0");
       }
   });
 });

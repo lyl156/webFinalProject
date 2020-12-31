@@ -6,6 +6,7 @@
   }
   
   .block {
+    /* overflow: hidden; */
     position: relative;
     width: 100%;
   }
@@ -84,7 +85,7 @@
   }
   
   .section3 {
-    height: 200vh;
+    height: 400vh;
     background: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.2));
     background-repeat: no-repeat;
     background-image: url('../assets/section3.png');
@@ -96,23 +97,35 @@
     align-content: space-between; */
   }
   .section3 p1 {
-    
+    /* white-space:pre; */
+
     font-size: 100%;
     color: black;
     font-weight:bold;
-    border: 2px solid black;
+    /* border: 2px solid black;
     outline-style: outset;
-    outline-color: grey;
-    padding: 5%;
+    outline-color: grey; */
+    padding: 3%;
     
+    /* width:300px; padding:4px; margin:0 auto;
+    background:#ccc;
+    border-radius:10px; */
+
+    /* width: 300px;
+    height: 100px;  
+    padding: 50px;
+    border: 1px solid red; */
   }
   
   .section4 {
-    height: 500vh;
+    height: 100vh;
     /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)); */
     background-repeat: no-repeat;
     background-image: url('../assets/section3.png');
     background-attachment: fixed;
+  }
+  .video {
+    
   }
   .section5 {
     height: 500vh;
@@ -155,16 +168,17 @@
   .a {
     width: 5%;
   }
-  .right {
-    position: absolute;
-    top : 25%;
-    left : 80%;
-  
-  }
   .left {
     position: absolute;
-    top : 25%;
+    top : 12.5%;
     left : 20%;
+  }
+
+  .right {
+    position: absolute;
+    top : 12.5%;
+    left : 80%;
+  
   }
 
   .game1 {
@@ -180,4 +194,25 @@
               margin-right: 10px;
               vertical-align: middle;
               margin-top: -2px;
+  }
+
+  .speech-bubble {
+    position: relative;
+    background: wheat;
+    border-radius: .4em;
+  }
+  
+  .speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: wheat;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
   }
