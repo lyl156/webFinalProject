@@ -103,9 +103,16 @@ $(document).ready(function () {
 function myFunction(x) {
   document.getElementById("myImg").src = "./assets/"+ x + ".png";
   document.getElementById("myImg2").src = "./assets/"+ x + ".png";
-  if (x > 2) {
-    x--;
-  }
   document.getElementById('output').innerHTML = '你選擇的是' + x + '號';
 
+  for (i = 1; i <= 4; i++) {
+    if (i == x) {
+      ele = document.getElementsByClassName("i" + x)[0];
+      ele.classList.remove("blink_me");
+    
+    } else {
+      ele = document.getElementsByClassName('i' + i)[0];
+      ele.classList.add("blink_me");
+    }
+  }
 }

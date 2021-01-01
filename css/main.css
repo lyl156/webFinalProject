@@ -1,6 +1,6 @@
 #ch {
   width: 15%;
-}
+ }
 .jumbotron {
     position: relative;
   }
@@ -74,12 +74,22 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
   }
+  .blink_me {
+    animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+  50% {
+      opacity: 0;
+    }
+  }
+
   .section2 {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.125));
@@ -130,9 +140,7 @@
     background-image: url('../assets/section3.png');
     background-attachment: fixed;
   }
-  .video {
-    
-  }
+ 
   .section5 {
     height: 500vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
