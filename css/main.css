@@ -29,12 +29,16 @@
   
   .section1 {
     position: relative;
-    height: 100vh;
+    height: 200vh;
+    /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.125)); */
+    background-image: url('../assets/frontpic.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     /* align-items: center; */
     /* justify-content: center; */
   }
   
-  .section1::before {
+  /* .section1::before {
     content: '';
     background-image: url('../assets/frontpic.jpg');
     background-size: cover;
@@ -44,15 +48,51 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-  }
+  } */
   
-  .title {
+  /* .title {
     position: relative;
     top:20%;
     left:5%;
     color: black;
-  }
+  } */
   
+  .titlePic {
+    position: relative;
+    top:20%;
+    left:25%;
+    width: 50%;
+  }
+
+  .sectionAbstract {
+    position: relative;
+    height: 100vh;
+    background-image: url('../assets/frontpic.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .sectionPic {
+    position: relative;
+    top:1%;
+    left:45%;
+    width: 8%;
+  }
+
+  #demo {
+    position: relative;
+    top:40%;
+    left:20%;
+    font-size: 200%;
+    font-weight:bold;
+  }
+  #demo2 {
+    position: relative;
+    top:40%;
+    left:16%;
+    font-size: 200%;
+    font-weight:bold;
+  }
+
   .section1_5 {
     position: relative;
     height: 100vh;
@@ -100,6 +140,11 @@
     /* justify-content: center; */
   }
   
+  .section2 p {
+    font-size: 200%;
+    position: relative;
+  }
+
   .section3 {
     height: 700vh;
     background: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.2));
@@ -118,6 +163,7 @@
     font-size: 100%;
     color: black;
     font-weight:bold;
+    font-size: large;
     /* border: 2px solid black;
     outline-style: outset;
     outline-color: grey; */
@@ -132,7 +178,11 @@
     padding: 50px;
     border: 1px solid red; */
   }
-  
+  .carousel {
+    top : -50%; 
+    width: 150%;
+    height: auto;
+  } 
   .section4 {
     height: 100vh;
     /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)); */
@@ -177,11 +227,10 @@
     height: auto;
   }
   
-  
-  
   .a {
     width: 5%;
   }
+
   .left {
     position: absolute;
     top : 12.5%;
@@ -199,6 +248,8 @@
     left : 80%;
   
   }
+
+
 
   .game1 {
     background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3));

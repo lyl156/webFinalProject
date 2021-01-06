@@ -7,8 +7,8 @@
         end: 'parent',
         fn: {
           left: {
-            start: 100,
-            end: -10,
+            start: 80,
+            end: -27,
             unit: '%',
           },
         },
@@ -54,13 +54,13 @@ $(document).ready(function () {
   $(window).scroll(function () {
     var scrolled = $(window).scrollTop();
       
-      if (scrolled >= 3.05 * vh ) {
+      if (scrolled >= 5.05 * vh ) {
         $(".con1").css("opacity", "1");
         console.log(scrolled)
         
       }
       for (i = 0; i < 4; i++) {
-        if (scrolled >= (3.5 + i * 0.4) * vh) {
+        if (scrolled >= (5.5 + i * 0.4) * vh) {
           $(".con" + (2 + i)).css("opacity", "1");
         }
       }
@@ -78,7 +78,7 @@ $(document).ready(function () {
       // if (scrolled >= 4.7 * vh)
       // $(".con5").css("opacity", "1");
       for (i = 0; i < 9; i++) {
-        if (scrolled >= (5.0 + i * 0.4) * vh) {
+        if (scrolled >= (7.0 + i * 0.4) * vh) {
           $(".con" + (6 + i)).css("opacity", "1");
         }
       }
@@ -91,12 +91,17 @@ $(document).ready(function () {
       // if (scrolled >= 5.8 * vh)
       // $(".con8").css("opacity", "1");
       
+      // for carousel
+      if (scrolled >= 7.5 * vh) {
+        $(".con7-5").css("opacity", "1");
+      }
 
-
-      if (scrolled < 3 * vh) {
+      if (scrolled < 4 * vh) {
         for (i = 1; i <= 14; i++) {
           $(".con" + i).css("opacity", "0");
-        } 
+        }
+        $(".con7-5").css("opacity", "0");
+ 
       }
   });
 });
