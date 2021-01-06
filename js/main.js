@@ -77,7 +77,7 @@ $(document).ready(function () {
      
       // if (scrolled >= 4.7 * vh)
       // $(".con5").css("opacity", "1");
-      for (i = 0; i < 3; i++) {
+      for (i = 0; i < 9; i++) {
         if (scrolled >= (5.0 + i * 0.4) * vh) {
           $(".con" + (6 + i)).css("opacity", "1");
         }
@@ -91,8 +91,10 @@ $(document).ready(function () {
       // if (scrolled >= 5.8 * vh)
       // $(".con8").css("opacity", "1");
       
+
+
       if (scrolled < 3 * vh) {
-        for (i = 1; i <= 8; i++) {
+        for (i = 1; i <= 14; i++) {
           $(".con" + i).css("opacity", "0");
         } 
       }

@@ -101,7 +101,7 @@
   }
   
   .section3 {
-    height: 400vh;
+    height: 700vh;
     background: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.2));
     background-repeat: no-repeat;
     background-image: url('../assets/section3.png');
@@ -186,6 +186,11 @@
     position: absolute;
     top : 12.5%;
     left : 20%;
+  }
+  .midPerson {
+    position: absolute;
+    top : 12.5%;
+    left : 50%;
   }
 
   .right {
