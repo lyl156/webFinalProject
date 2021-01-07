@@ -135,10 +135,9 @@
 
   .section2 {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.125));
+    /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.125)); */
     background-image: url('../assets/section3.png');
     background-size: cover;
-
     background-attachment: fixed;
     background-repeat: no-repeat;
     /* align-items: center; *
@@ -152,7 +151,8 @@
 
   .section3 {
     height: 700vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.2));
+    position: relative;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.2)); */
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../assets/section3.png');
@@ -191,6 +191,7 @@
   } 
   .section4 {
     height: 100vh;
+    position: relative;
     /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)); */
     background-repeat: no-repeat;
     background-image: url('../assets/section3.png');
@@ -198,14 +199,7 @@
     background-attachment: fixed;
   }
  
-  .section5 {
-    height: 500vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-    background-repeat: no-repeat;
-    background-image: url('../assets/section5.png');
-    background-attachment: fixed;
-    background-size: cover;
-  }
+
   .sectionx {
     height: 150vh;
     align-items: center; 
