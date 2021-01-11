@@ -49,7 +49,7 @@ $(document).ready(function () {
 var vh = window.innerHeight ||
              document.documentElement.clientHeight ||
              document.body.clientHeight;
-console.log(vh);
+console.log("this is vh :" + vh);
 $(document).ready(function () {
   $(window).scroll(function () {
     var scrolled = $(window).scrollTop();
