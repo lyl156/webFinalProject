@@ -46,10 +46,11 @@ $(document).ready(function () {
   });
 });
 // add conversation
-var vh = window.innerHeight ||
-             document.documentElement.clientHeight ||
-             document.body.clientHeight;
+var vh = $(window).height();
+var vw = $(window).width();
+
 console.log("this is vh :" + vh);
+console.log("this is vh :" + vw);
 $(document).ready(function () {
   $(window).scroll(function () {
     var scrolled = $(window).scrollTop();
