@@ -1,3 +1,14 @@
+.modal {
+    bottom: 0;
+    display: none;
+    left: 0;
+    overflow-x: auto;
+    overflow-y: scroll; /* <--- this guy right here */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1040;
+}
 #ch {
   width: 15%;
  }
@@ -60,7 +71,7 @@
   
   .titlePic {
     position: relative;
-    top:20%;
+    top:15%;
     left:25%;
     width: 50%;
   }
@@ -96,6 +107,13 @@
     font-weight:bold;
   }
 
+  #demo3 {
+    position: relative;
+    top:40%;
+    left:45%;
+    font-size: 250%;
+    font-weight:bold;
+  }
   .section1_5 {
     position: relative;
     height: 100vh;
@@ -134,7 +152,7 @@
   }
 
   .section2 {
-    height: 100vh;
+    height: 300vh;
     /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.125)); */
     background-image: url('../assets/section3.png');
     background-size: cover;
