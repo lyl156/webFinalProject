@@ -60,7 +60,7 @@
   
   .titlePic {
     position: relative;
-    top:20%;
+    top:10%;
     left:25%;
     width: 50%;
   }
@@ -92,6 +92,13 @@
     position: relative;
     top:40%;
     left:16%;
+    font-size: 200%;
+    font-weight:bold;
+  }
+  #demo3 {
+    position: relative;
+    top:40%;
+    left:37%;
     font-size: 200%;
     font-weight:bold;
   }
